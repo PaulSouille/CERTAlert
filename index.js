@@ -17,8 +17,8 @@ async function checkAlert(){
     currAlert = feed.items[0];
     if(currAlert.title!=lastAlert){
             const mailOptions = {
-                from: 'paul.dev.api@gmail.com',
-                to: 'paul.souille85@gmail.com',
+                from: '<email sender>',
+                to: '<your email>',
                 subject: 'New security alert',
                 html: '<h3>'+currAlert.title+'</h3><br><p><a href="'+currAlert.link+'">'+currAlert.content+'</a></p>'
                 };
@@ -31,8 +31,4 @@ async function checkAlert(){
                 lastAlert = currAlert.title;
         }
 }
-
-
-
-
 setInterval(checkAlert,5000);
