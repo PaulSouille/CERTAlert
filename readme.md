@@ -19,7 +19,7 @@ Don't forget to fill config.js :
 config.email = '';
 config.password = '';
 ```
-And mail optionsfrom index.js : 
+And mail options from index.js : 
 ```js
 const mailOptions = {
                 from: '<email sender>',
